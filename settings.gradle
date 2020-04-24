@@ -2,3 +2,4 @@ rootProject.name = 'microservice-udemy-class'
 
 include 'SpringDataRest-XmlJSONSerialization-DevTools-Actuator'
 include 'cloud-server'
+include 'cloud-client'
