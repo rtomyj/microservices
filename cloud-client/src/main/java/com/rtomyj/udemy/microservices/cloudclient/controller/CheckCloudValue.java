@@ -13,13 +13,13 @@ public class CheckCloudValue
 	@Autowired
 	private Environment environment;
 
-	@Value("${config.status}")
-	private String status;
+	@Value("${config.value}")
+	private String value;
 
 	@GetMapping("/{propName}")
 	public ResponseEntity<String> getProp()
 	{
 		System.out.println(environment.toString());
-		return ResponseEntity.ok(status);
+		return ResponseEntity.ok(value);
 	}
 }

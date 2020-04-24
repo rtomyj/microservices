@@ -5,7 +5,7 @@ spring:
       server:
         git:
           uri: https://github.com/rtomyj/microservices
-          searchPaths: '{application}/{profile}'
+          searchPaths: 'cloud-config-data/{application}/{application}-{profile}'
 
 server:
   port: 8081
