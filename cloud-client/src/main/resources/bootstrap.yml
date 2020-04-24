@@ -1,0 +1,12 @@
+
+# The cloud config props need to be put in a boostrap.(yml/properties) since boostrap file will be loaded early compared to application.(yml/properties)
+spring:
+  application:
+    name: cloud-props
+  cloud:
+    config:
+      uri: http://localhost:8081
+
+
+server:
+  port: 8082
